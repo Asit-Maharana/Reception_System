@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Exit"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded_corner2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgIcon"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="100dp"
+                    android:src="@drawable/man" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:text="Id : "
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/UserId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".7"
+                        android:text="25123"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:text="Name : "
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/UserName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".7"
+                        android:text="Asit Maharana "
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView556"
+                        android:layout_width="52dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:text="Mobile No : "
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/UserMobileNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".7"
+                        android:text="7077460020"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:text="Out Time : "
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <!--<EditText
+                    android:id="@+id/editTextDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:ems="10"
+                    android:inputType="date" />-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0.6"
+                        android:hint="Select Time">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="145dp"
+                            android:layout_height="55dp"
+                            android:inputType="time"
+                            android:textSize="20sp"
+                            android:id="@+id/currentTIme"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/exitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:text="Exit" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

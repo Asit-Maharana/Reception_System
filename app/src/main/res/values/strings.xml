@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Reception System</string>
+    <string name="name">Name</string>
+    <string name="mobilenumber">MobileNumber</string>
+    <string name="from">From</string>
+    <string name="whom_to_visit">Whom to visit</string>
+    <string name="id_number">ID Number</string>
+    <string name="person_photo">Person Photo:</string>
+    <string name="id_photo">ID Photo:</string>
+    <string name="submit">Submit</string>
+    <string name="exit">EXIT</string>
+</resources>
